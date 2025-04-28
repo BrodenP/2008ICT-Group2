@@ -1,0 +1,108 @@
+    /*Sets Default Font For Webpage*/
+    body {
+    font-family: sans-serif;
+    }
+
+    /* Background colours for each section class just to see spacing */
+    .FAQ-box { background-color: #c1ffc1; padding: 1em; }
+    .current-pledges-box { background-color: #ffd3e3; padding: 1em; }
+    .footer { background-color: #d6d6d6; padding: 1em; }
+    .footer-left { background-color: #e8e8e8; padding: 1em; }
+    .footer-right { background-color: #cccccc; padding: 1em; }
+    .form-box { background-color: #ffe4b3; padding: 1em; }
+    .header { background-color: #add8e6; padding: 1em; }
+    .header-left { background-color: #b0e0e6; padding: 1em; }
+    .image-box { background-color: #f0e68c; padding: 1em; }
+    .image-text-box { background-color: #ffebcd; padding: 1em; }
+    .info-box { background-color: #e0ffff; padding: 1em; }
+    .landing-page { background-color: #e6ffe6; padding: 1em; }
+    .left-column { background-color: #e0f7fa; padding: 1em; }
+    .left-link-column { background-color: #dcedc8; padding: 1em; }
+    .logo { background-color: #fafad2; padding: 1em; }
+    .middle-column { background-color: #f5f5dc; padding: 1em; }
+    .nav { background-color: #f0f8ff; padding: 1em; }
+    .next-button { background-color: #ffe0b2; padding: 1em; }
+    .no-button { background-color: #f48fb1; padding: 1em; }
+    .pledge { background-color: #fddde6; padding: 1em; }
+    .pledge-form-box { background-color: #ffcccb; padding: 1em; }
+    .quiz-box { background-color: #b3e5fc; padding: 1em; }
+    .quiz-feedback { background-color: #d1c4e9; padding: 1em; }
+    .quiz-responses { background-color: #ffecb3; padding: 1em; }
+    .right-column { background-color: #d1f7c4; padding: 1em; }
+    .right-image-column { background-color: #fceabb; padding: 1em; }
+    .search-bar { background-color: #e6e6fa; padding: 1em; }
+    .sidebar-links { background-color: #f9fbe7; padding: 1em; }
+    .table-section { background-color: #f0fff0; padding: 1em; }
+    .text-box { background-color: #ffe4e1; padding: 1em; }
+    .video-box { background-color: #e0bbff; padding: 1em; }
+    .yes-button { background-color: #a5d6a7; padding: 1em; }
+
+    /* Flex layout for header, content columns, and footer */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1em 2em;
+    }
+    
+    .header-left {
+        display: flex;
+        align-items: center;
+        gap: 1em;
+    }
+    
+    nav {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        gap: 1.5em;
+    }
+    
+    /* Horizontal layout homepage */
+    .landing-main-content {
+        display: flex;
+        gap: 1em;
+    }
+
+    /* Horizontal layout for columns within content body - Eg will space left-column, and right-column horizontally if within class "content" */
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1em;
+    }
+    
+    /* Vertical stacking inside sidebar */
+    .left-link-column {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    /* Column layout: left, middle, and right columns stack child elements vertically */
+    .left-column,
+    .middle-column,
+    .right-column {
+        flex: 1;
+        min-width: 250px;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+    
+    /* Footer layout: horizontal split between left and right */
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2em;
+        flex-wrap: wrap;
+    }
+    
+    .footer-left,
+    .footer-right {
+        display: flex;
+        align-items: center;
+        gap: 1em;
+    }
+  
+  
