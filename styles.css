@@ -105,4 +105,14 @@
         gap: 1em;
     }
   
-  
+  /* Stastics section on the right side of home page */
+  .home-right-stat{
+    display: flex;
+    justify-content: space-around;
+    margin: 38px;
+
+  }
+
+  .statistics-box-live{
+    margin: auto
+  }
