@@ -52,6 +52,20 @@
     padding: 1em;
     color: #FFFFFF;
   }
+
+  .nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .nav a:hover {
+    text-decoration: underline;
+  }
+
+  .nav a.active {
+    text-decoration: underline;
+  }
   
   .search-bar {
     background-color: #0767B1;
