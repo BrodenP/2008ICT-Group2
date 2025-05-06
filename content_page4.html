@@ -3,129 +3,126 @@
 <head>
   <meta charset="UTF-8">
   <title>Climate Change Brisbane</title>
-  <!--Assign Stylesheet-->
   <link rel="stylesheet" href="styles.css">
 </head>
 
-<!--Proposed Changes / Change Log
-    -Moved search bar to header section to improve flow of webpage
-
-
-
--->
 <body>
-    <!--Header-->
+  <div class="page-container">
+
+    <!-- Header -->
     <header class="header">
-      <!-- Left: Logo and Site Name -->
       <div class="header-left">
-        <img src="logo.png" alt="Logo" class="logo">
+        <img src="logo.png" alt="Logo" class="logo" width="150" height="150">
         <h1>Climate Change Brisbane</h1>
       </div>
-      
-        <!-- Center: Main Nav links -->
-        <nav class="nav">
-          <a href="index.html">Home</a>
-          <a href="content_page1.html">Test Page 1</a>
-          <a href="content_page2.html">Test Page 2</a>
-          <a href="content_page3.html">Test Page 3</a>
-          <a href="content_page4.html">Test Page 4</a>
-          <a href="content_page5.html">Test Page 5</a>
-        </nav>
-      
-        <!-- Right: Search Bar -->
-        <div class="search-bar">
-          <input type="text" placeholder="Search..." disabled>
-          <button disabled>🔍</button>
-        </div>
+
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="content_page1.html">Climate Change Overview</a>
+        <a href="content_page2.html">Local Impacts</a>
+        <a href="content_page3.html">Actions & Solutions</a>
+        <a href="content_page4.html">Your Impact</a>
+        <a href="content_page5.html">Get Involved</a>
+      </nav>
+
+      <div class="search-bar">
+        <input type="text" placeholder="Search..." disabled>
+        <button disabled>🔍</button>
+      </div>
     </header>
 
-    <p>content_page 4</p>
-
+    <!-- Main Content -->
     <section class="content">
-        <!-- Left Column: Info Boxes -->
-        <div class="left-column">
-          <!-- Top Box: Did You Know -->
-          <div class="info-box">
-            <h3>Did You Know?</h3>
-      
-            <!-- Each <details> will display a climate change fact -->
-            <details>
-              <summary>Fact 1</summary>
-              <p>placeholder fact content</p>
-            </details>
-            <details>
-              <summary>Fact 2</summary>
-              <p>placeholder fact content</p>
-            </details>
-            <details>
-              <summary>Fact 3</summary>
-              <p>placeholder fact content</p>
-            </details>
-          </div>
-      
-          <!-- Bottom Box: How You Can Help -->
-          <div class="info-box">
-            <h3>How You Can Help</h3>
-      
-            <!-- Each <details> is a way to be more sustainable -->
-            <details>
-              <summary>Tip 1</summary>
-              <p>placeholder tip content</p>
-            </details>
-            <details>
-              <summary>Tip 2</summary>
-              <p>placeholder tip content</p>
-            </details>
-            <details>
-              <summary>Tip 3</summary>
-              <p>placeholder tip content</p>
-            </details>
-          </div>
-        </div>
-      
-        <!-- Right Column: Carbon Footprint Quiz -->
-        <div class="right-column">
-          <!-- quiz block will show one question at a time -->
-          <div class="quiz-box">
-            <h2>Carbon Footprint Quiz</h2>
-            <p class="quiz-question">Do you recycle glass bottles?</p>
-      
-            <!-- Yes/No response buttons -->
-            <!-- In CSS: Yes = green background + “You're Being Sustainable” -->
-            <!-- In CSS: No = red background + “There Is Room To Improve” -->
-      
-            <div class="quiz-responses">
-              <button class="yes-button">Yes</button>
-              <button class="no-button">No</button>
-            </div>
-      
-            <!-- Placeholder response text area -->
-            <p class="quiz-feedback">Animate to Either You're Being Sustainable OR There is room for improvement</p>
-      
-            <!-- “Next” button will cycle through prewritten questions -->
-            <!-- Future: animated transition -->
-            <button class="next-button">Next Question</button>
-          </div>
-        </div>
-      </section>
-      
-      
 
-  <!--Footer seperated into two sections for styling and alignment to left and right corner of footer-->
-  <footer class="footer">
-    <div class="footer-left">
+      <!-- Left Column: Facts and Tips -->
+      <div class="left-column">
+        <div class="info-box">
+          <h3>Did You Know?</h3>
+          <details>
+            <summary></summary>
+            <h3>Australia is warming faster than the global average</h3>
+            <p>Since 1910, Australia's average land temperature has increased by 1.5°C, 
+              contributing to more frequent extreme weather events like heatwaves, 
+              bushfires, and droughts.
+            </p>
+          </details>
+          <details>
+            <summary></summary>
+            <h3>Queensland is among the most vulnerable regions to sea level rise</h3>
+            <p>Low-lying coastal suburbs in Brisbane—like Wynnum and Sandgate—face an 
+              increasing risk of tidal flooding due to rising sea levels and storm surges.
+            </p>
+          </details>
+          <details>
+            <summary></summary>
+            <h3>Climate change is affecting wildlife migration and breeding patterns</h3>
+            <p>Species such as the green sea turtle are producing more female hatchlings 
+              due to warmer sand temperatures, which could disrupt ecological balance over time.
+            </p>
+          </details>
+        </div>
+
+        <div class="info-box">
+          <h3>How You Can Help</h3>
+          <details>
+            <summary></summary>
+            <h3>Switch to renewable energy at home</h3>
+            <p>Installing solar panels or choosing a green energy provider reduces 
+              dependence on fossil fuels and lowers your household carbon footprint.
+            </p>
+          </details>
+          <details>
+            <summary></summary>
+            <h3>Reduce car use by cycling, walking, or using public transport</h3>
+            <p>Cutting back on short car trips helps reduce greenhouse gas emissions 
+              and improves air quality in your community.
+            </p>
+          </details>
+          <details>
+            <summary></summary>
+            <h3>Plant native trees and support urban greening</h3>
+            <p>Trees absorb CO₂, provide shade, and help cool urban areas—supporting 
+              local biodiversity and reducing the urban heat island effect.</p>
+          </details>
+        </div>
+      </div>
+
+      <!-- Right Column: Quiz -->
+      <div class="quiz-column">
+        <div class="quiz-box">
+          <h2>Carbon Footprint Quiz</h2>
+          <p class="quiz-question">Do you recycle glass bottles?</p>
+
+          <div class="quiz-responses">
+            <button class="yes-button">Yes</button>
+            <button class="no-button">No</button>
+          </div>
+
+          <p class="quiz-feedback">Animate to Either You're Being Sustainable OR There is room for improvement</p>
+
+          <button class="next-button">Next Question</button>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-left">
         <a href="#">Contact</a>
         <a href="#">Careers</a>
         <a href="#">Sponsors</a>
         <a href="#">Privacy</a>
-    </div>
+      </div>
 
-    <div class="footer-right">
+      <div class="footer-right">
         <h3>Follow Us On:</h3>
         <a href="#">Facebook</a>
         <a href="#">Instagram</a>
         <a href="#">X</a>
-    </div>
+      </div>
     </footer>
+
+  </div>
 </body>
 </html>

@@ -3,102 +3,118 @@
 <head>
   <meta charset="UTF-8">
   <title>Climate Change Brisbane</title>
-  <!--Assign Stylesheet-->
   <link rel="stylesheet" href="styles.css">
 </head>
 
-<!--Proposed Changes / Change Log
-    -Moved search bar to header section to improve flow of webpage
-
-
-
--->
 <body>
-    <!--Header-->
+  <div class="page-container">
+
+    <!-- Header -->
     <header class="header">
-      <!-- Left: Logo and Site Name -->
       <div class="header-left">
-        <img src="logo.png" alt="Logo" class="logo">
+        <img src="logo.png" alt="Logo" class="logo" width="150" height="150">
         <h1>Climate Change Brisbane</h1>
       </div>
-      
-        <!-- Center: Main Nav links -->
-        <nav class="nav">
-          <a href="index.html">Home</a>
-          <a href="content_page1.html">Test Page 1</a>
-          <a href="content_page2.html">Test Page 2</a>
-          <a href="content_page3.html">Test Page 3</a>
-          <a href="content_page4.html">Test Page 4</a>
-          <a href="content_page5.html">Test Page 5</a>
-        </nav>
-      
-        <!-- Right: Search Bar -->
-        <div class="search-bar">
-          <input type="text" placeholder="Search..." disabled>
-          <button disabled>🔍</button>
-        </div>
+
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="content_page1.html">Climate Change Overview</a>
+        <a href="content_page2.html">Local Impacts</a>
+        <a href="content_page3.html">Actions & Solutions</a>
+        <a href="content_page4.html">Your Impact</a>
+        <a href="content_page5.html">Get Involved</a>
+      </nav>
+
+      <div class="search-bar">
+        <input type="text" placeholder="Search..." disabled>
+        <button disabled>🔍</button>
+      </div>
     </header>
-    
 
-    <p>content_page 1</p>
-
-    <!--left two floating img and text blocks - mid floating vid and text block - right image with seperate text block below-->
+    <!-- Main Content -->
     <section class="content">
-      <!-- Left Column: Two stacked image/text boxes -->
+
+      <!-- Left Column -->
       <div class="left-column">
         <div class="image-text-box">
-          <img src="image1.jpg" alt="image 1">
-          <p>placeholder text</p>
+          <h3>Rising Temperatures and Urban Heat</h3>
+          <img src="heat.jpg" alt="image 1" class="float-image">
+          <p>Brisbane has experienced a noticeable increase in average temperatures over recent decades, consistent with national climate trends. Urban heat island effects—where 
+            concrete, roads, and buildings trap heat—are intensifying the impact of global warming in the city. 
+          </p>
+          <p>
+            Suburbs with low tree cover are particularly vulnerable, facing 
+            more frequent and prolonged heatwaves. This rise in temperature places additional stress on vulnerable populations, increases energy consumption for cooling, and 
+            heightens the risk of heat-related illnesses.
+          </p>
         </div>
         <div class="image-text-box">
-          <img src="image2.jpg" alt="image 2">
-          <p>placeholder text</p>
+          <h3>Coastal Flooding and Sea Level Rise</h3>
+          <img src="flood.jpg" alt="image 2" class="float-image">
+          <p>With Brisbane’s proximity to Moreton Bay and the Brisbane River, the city is increasingly vulnerable to coastal and tidal flooding due to rising sea levels. Since 
+            1880, global sea levels have risen by about 20 centimetres, and continued ice melt could accelerate this trend. 
+          </p>
+          <p>
+            Low-lying areas such as Wynnum, Sandgate, and parts 
+            of the Brisbane CBD are at greater risk during storm surges or king tides. This not only threatens residential properties but also puts infrastructure and essential 
+            services at risk, prompting a need for resilient planning and adaptive coastal defences.
+          </p>
         </div>
       </div>
-    
-      <!-- Middle Column: Video and text -->
+
+      <!-- Middle Column -->
       <div class="middle-column">
         <div class="video-box">
-          <!-- Video float or centered as needed -->
-          <iframe 
-            src="https://www.youtube.com/embed/ID" 
-            width="300" 
-            height="170" 
-            allowfullscreen>
-          </iframe>
+          <iframe width="560" height="315"
+            src="https://www.youtube.com/embed/fQZQ-benW9Y?si=Fs5UpnzwLrQLPlmw"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen></iframe>
           <p>placeholder text</p>
         </div>
       </div>
-    
-      <!-- Right Column: One image and one text block stacked -->
+
+      <!-- Right Column -->
       <div class="right-column">
         <div class="image-text-box">
-          <img src="image3.jpg" alt="Supporting visual 3">
-        </div>
-        <div class="text-box">
-          <p>placeholder text</p>
+          <h3>Bushfires and Smoke Hazards in Brisbane</h3>
+          <img src="fire.jpg" alt="Supporting visual 3" class="float-left-image">
+          <p>Bushfires are becoming an increasingly pressing concern for Brisbane as climate change intensifies heatwaves, reduces rainfall, and extends the fire season 
+            across South East Queensland. The outer suburbs of Brisbane—particularly those near bushland such as Mount Coot-tha, The Gap, and Samford Valley—are especially 
+            vulnerable. Warmer temperatures and dry vegetation have led to more frequent high-risk fire weather days, placing homes, infrastructure, and wildlife corridors at 
+            greater risk. Even areas not directly bordering forests are feeling the impact through heightened community alerts, controlled burn-offs, and the mobilisation of 
+            firefighting resources closer to residential zones. 
+          </p>
+          <p>
+            Beyond immediate fire damage, smoke generated by bushfires has emerged as a significant health hazard for 
+            Brisbane’s urban population. Thick smoke can settle across the city, reducing visibility and contributing to poor air quality for days or even weeks. Vulnerable 
+            groups such as children, the elderly, and individuals with asthma or cardiovascular conditions face heightened health risks during these events. In recent years, 
+            air quality index readings in Brisbane have surpassed hazardous levels during bushfire outbreaks, leading to school warnings, event cancellations, and growing public 
+            concern about long-term exposure.
+          </p>
         </div>
       </div>
-    </section>
-    
-    
-      
 
-  <!--Footer seperated into two sections for styling and alignment to left and right corner of footer-->
-  <footer class="footer">
-    <div class="footer-left">
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-left">
         <a href="#">Contact</a>
         <a href="#">Careers</a>
         <a href="#">Sponsors</a>
         <a href="#">Privacy</a>
-    </div>
+      </div>
 
-    <div class="footer-right">
+      <div class="footer-right">
         <h3>Follow Us On:</h3>
         <a href="#">Facebook</a>
         <a href="#">Instagram</a>
         <a href="#">X</a>
-    </div>
+      </div>
     </footer>
+
+  </div>
 </body>
 </html>

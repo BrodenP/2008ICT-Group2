@@ -3,112 +3,136 @@
 <head>
   <meta charset="UTF-8">
   <title>Climate Change Brisbane</title>
-  <!--Assign Stylesheet-->
   <link rel="stylesheet" href="styles.css">
 </head>
 
-<!--Proposed Changes / Change Log
-    -Moved search bar to header section to improve flow of webpage
-
-
-
--->
 <body>
-    <!--Header-->
+  <div class="page-container">
+
+    <!-- Header -->
     <header class="header">
-        <!-- Left: Logo and Site Name -->
-        <div class="header-left">
-          <img src="logo.png" alt="Logo" class="logo">
-          <h1>Climate Change Brisbane</h1>
-        </div>
-        
-          <!-- Center: Main Nav links -->
-          <nav class="nav">
-            <a href="index.html">Home</a>
-            <a href="content_page1.html">Test Page 1</a>
-            <a href="content_page2.html">Test Page 2</a>
-            <a href="content_page3.html">Test Page 3</a>
-            <a href="content_page4.html">Test Page 4</a>
-            <a href="content_page5.html">Test Page 5</a>
-          </nav>
-        
-          <!-- Right: Search Bar -->
-          <div class="search-bar">
-            <input type="text" placeholder="Search..." disabled>
-            <button disabled>🔍</button>
-          </div>
-      </header>
-      
+      <div class="header-left">
+        <img src="logo.png" alt="Logo" class="logo" width="150" height="150">
+        <h1>Climate Change Brisbane</h1>
+      </div>
 
-    <p>content_page 2</p>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="content_page1.html">Climate Change Overview</a>
+        <a href="content_page2.html">Local Impacts</a>
+        <a href="content_page3.html">Actions & Solutions</a>
+        <a href="content_page4.html">Your Impact</a>
+        <a href="content_page5.html">Get Involved</a>
+      </nav>
 
+      <div class="search-bar">
+        <input type="text" placeholder="Search..." disabled>
+        <button disabled>🔍</button>
+      </div>
+    </header>
 
+    <!-- Main Content -->
     <section class="content">
-        <!-- Column 1: Two text boxes stacked -->
-        <div class="left-column">
-            <div class="text-box">
-                <h3>First Text Box Title</h3>
-                <p>first text block.</p>
-            </div>
-            <div class="text-box">
-                <h3>Second Text Box Title</h3>
-                <p>second text block.</p>
-            </div>
+
+      <!-- Column 1: Text Boxes -->
+      <div class="left-column">
+        <div class="text-box">
+          <h3>Sea Level Rise and Brisbane’s Coastal Vulnerability</h3>
+          <p>Brisbane’s proximity to both the Brisbane River and Moreton Bay places it at increasing risk from rising sea levels—one of the most immediate threats posed by climate 
+            change. Since 1880, global sea levels have risen by approximately 20 centimetres, and scientific models forecast continued acceleration due to melting glaciers 
+            and polar ice sheets. For a city with many low-lying coastal and riverside suburbs, this represents a serious challenge. Areas like Wynnum, Sandgate, and parts of 
+            the inner city are especially vulnerable during extreme weather events such as storm surges or king tides. Flooding in these locations can damage roads, homes, 
+            public transport lines, and drainage systems.
+          </p>
+          <p>
+            As tides and rainfall patterns shift, there is an increased likelihood of saltwater intrusion into freshwater supplies 
+            and erosion of protective shorelines. To respond, Brisbane City Council has begun implementing adaptive measures, including stricter flood zone planning, upgraded 
+            drainage infrastructure, and community flood awareness campaigns. Long-term strategies may also include the development of elevated walkways, seawalls, and the 
+            restoration of coastal wetlands as natural buffers. However, these interventions require ongoing investment and coordination between all levels of government and 
+            the community.
+          </p>
         </div>
-        
-        <!-- Column 2: Image -->
-        <div class="middle-column">
-            <div class ="image-box">
-                <img src="image4.jpg" alt="climate change image" class="column-image">
-            </div>
+        <div class="text-box">
+          <h3>Increasing Bushfire Risk in South East Queensland</h3>
+          <p>Climate change is intensifying bushfire conditions across Queensland, and the greater Brisbane region is no exception. Rising temperatures, reduced rainfall, and 
+            more frequent droughts are creating drier landscapes that act as kindling for wildfires. The fire season is lengthening, and days of extreme fire danger are occurring 
+            more regularly in areas that previously saw minimal threat. 
+          </p>
+          <p>
+            In Brisbane, suburbs near bushland—such as The Gap, Mount Coot-tha, and Samford Valley—are increasingly 
+            under threat. Urban sprawl into forested areas has further complicated emergency response, placing more homes and infrastructure in the path of potential fires. 
+            Additionally, the presence of thick vegetation around residential areas means even minor ignition sources can lead to fast-spreading bushfires under the right weather 
+            conditions. Beyond physical damage, bushfires also create hazardous air quality across the metropolitan area.
+          </p>
+          <p>
+            Smoke from distant fires can blanket the city, leading 
+            to school closures, reduced visibility, and public health warnings. Brisbane’s emergency services are now investing in more advanced fire detection, public alert 
+            systems, and community preparedness programs to reduce the risk and severity of future bushfire events.
+          </p>
         </div>
-        
-        <!-- Column 3: FAQ List most likely. ticks off list technique usage -->
-        <div class="right column">
-            <div class = "FAQ-box">
-                <h3>FAQ</h3>
-                <ul>
-                    <li>
-                        Placeholder Question 1
-                        <p>Placeholder answer explaining the point in more detail.</p>
-                    </li>
-                    <li>
-                        Placeholder Question 2
-                        <p>Placeholder answer explaining the point in more detail.</p>
-                    </li>
-                    <li>
-                        Placeholder Question 3
-                        <p>Placeholder answer explaining the point in more detail.</p>
-                    </li>
-                    <li>
-                        Placeholder Question 4
-                        <p>Placeholder answer explaining the point in more detail.</p>
-                    </li>
-                    <li>
-                        Placeholder Question 5
-                        <p>Placeholder answer explaining the point in more detail.</p>
-                    </li>
-                </ul>
-            </div>
+      </div>
+
+      <!-- Column 2: Image -->
+      <div class="middle-column">
+        <div class="image-box">
+          <img src="coast.jpg" alt="climate change image" class="column-image">
         </div>
+      </div>
+
+      <!-- Column 3: FAQ -->
+      <div class="right-column">
+        <div class="FAQ-box">
+          <h3>FAQ</h3>
+          <ul>
+            <li>
+              <strong>What is causing climate change in Australia?</strong>
+              <p>Human activities—particularly the burning of fossil fuels like coal, oil, and gas—are the primary drivers of climate change in Australia. These activities 
+              release greenhouse gases such as carbon dioxide (CO₂) into the atmosphere, trapping heat and leading to long-term warming trends across the country.</p>
+            </li>
+            <li>
+              <strong>How has Brisbane’s climate changed in recent decades?</strong>
+              <p>Brisbane has experienced rising average temperatures, more frequent heatwaves, and shifts in rainfall patterns. Since 1910, Queensland's average temperatures 
+              have increased by around 1.5°C, contributing to longer fire seasons, increased evaporation, and more extreme weather events.</p>
+            </li>
+            <li>
+              <strong>Is sea level rise a real threat to Brisbane?</strong>
+              <p>Yes. Brisbane’s coastal suburbs, including Wynnum, Sandgate, and parts of the CBD, face increased risks from rising sea levels and storm surges. This poses 
+              challenges for infrastructure, housing, and flood management systems—especially during king tides or severe storms.</p>
+            </li>
+            <li>
+              <strong>How does climate change affect bushfire risk in Queensland?</strong>
+              <p>Climate change is intensifying bushfire conditions across Queensland, including the Brisbane region. Hotter temperatures, drier vegetation, and prolonged 
+              droughts create ideal conditions for fires, increasing both their frequency and severity. Suburbs near bushland, such as The Gap and Mount Coot-tha, are particularly vulnerable.</p>
+            </li>
+            <li>
+              <strong>What is Brisbane doing to address climate change?</strong>
+              <p>Brisbane City Council has implemented sustainability strategies such as reducing emissions in council operations, expanding green public transport, and 
+              supporting solar energy uptake. There are also community programs encouraging tree planting, water conservation, and energy efficiency to help residents adapt 
+              and reduce their impact.</p>
+            </li>            
+          </ul>
+        </div>
+      </div>
+
     </section>
 
-
-  <!--Footer seperated into two sections for styling and alignment to left and right corner of footer-->
-  <footer class="footer">
-    <div class="footer-left">
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-left">
         <a href="#">Contact</a>
         <a href="#">Careers</a>
         <a href="#">Sponsors</a>
         <a href="#">Privacy</a>
-    </div>
+      </div>
 
-    <div class="footer-right">
+      <div class="footer-right">
         <h3>Follow Us On:</h3>
         <a href="#">Facebook</a>
         <a href="#">Instagram</a>
         <a href="#">X</a>
-    </div>
+      </div>
     </footer>
+
+  </div>
 </body>
 </html>

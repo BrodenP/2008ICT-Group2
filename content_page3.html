@@ -3,99 +3,103 @@
 <head>
   <meta charset="UTF-8">
   <title>Climate Change Brisbane</title>
-  <!--Assign Stylesheet-->
   <link rel="stylesheet" href="styles.css">
 </head>
 
-<!--Proposed Changes / Change Log
-    -Moved search bar to header section to improve flow of webpage
-
-
-
--->
 <body>
-    <!--Header-->
+  <div class="page-container">
+
+    <!-- Header -->
     <header class="header">
-        <!-- Left: Logo and Site Name -->
-        <div class="header-left">
-          <img src="logo.png" alt="Logo" class="logo">
-          <h1>Climate Change Brisbane</h1>
-        </div>
-        
-          <!-- Center: Main Nav links -->
-          <nav class="nav">
-            <a href="index.html">Home</a>
-            <a href="content_page1.html">Test Page 1</a>
-            <a href="content_page2.html">Test Page 2</a>
-            <a href="content_page3.html">Test Page 3</a>
-            <a href="content_page4.html">Test Page 4</a>
-            <a href="content_page5.html">Test Page 5</a>
-          </nav>
-        
-          <!-- Right: Search Bar -->
-          <div class="search-bar">
-            <input type="text" placeholder="Search..." disabled>
-            <button disabled>🔍</button>
-          </div>
-      </header>
+      <div class="header-left">
+        <img src="logo.png" alt="Logo" class="logo" width="150" height="150">
+        <h1>Climate Change Brisbane</h1>
+      </div>
 
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="content_page1.html">Climate Change Overview</a>
+        <a href="content_page2.html">Local Impacts</a>
+        <a href="content_page3.html">Actions & Solutions</a>
+        <a href="content_page4.html">Your Impact</a>
+        <a href="content_page5.html">Get Involved</a>
+      </nav>
 
-    <p>content_page 3</p>
+      <div class="search-bar">
+        <input type="text" placeholder="Search..." disabled>
+        <button disabled>🔍</button>
+      </div>
+    </header>
 
-
+    <!-- Main Content -->
     <section class="content">
-        <!-- Column 1: Email signup form -->
-        <div class="left-column">
-            <div class = "form-box">
-                <h3>Join Our Email List</h3>
-                <form>
-                    <label for="email">Email Address:</label><br>
-                    <input type="email" id="email" name="email" placeholder="you@example.com" disabled><br><br>
-                    <button type="submit" disabled>Sign Up</button>
-                </form>
-                <p><small>This form is a prototype placeholder. No data is collected.</small></p>
-            </div>
-        </div>
 
-        <!-- Column 2: Embedded video -->
-        <div class="middle-column">
-            <div class="video-box">
-                <h3>Watch: Climate Change Explained</h3>
-                <!-- Video float or centered as needed -->
-                <iframe 
-                  src="https://www.youtube.com/embed/ID" 
-                  width="300" 
-                  height="170" 
-                  allowfullscreen>
-                </iframe>
-                <p>placeholder text</p>
-              </div>
+      <!-- Column 1: Email Signup Form -->
+      <div class="left-column">
+        <div class="form-box">
+          <h3>Join Our Email List</h3>
+          <form>
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" placeholder="you@example.com" disabled><br><br>
+            <button type="submit" disabled>Sign Up</button>
+          </form>
+          <p><small>This form is a prototype placeholder. No data is collected.</small></p>
         </div>
+      </div>
 
-        <!-- Column 3: Text block -->
-        <div class="right-column">
-            <div class="text-box">
-                <h3>Second Text Box Title</h3>
-                <p>second text block.</p>
-            </div>
+      <!-- Column 2: Embedded Video -->
+      <div class="middle-column">
+        <div class="video-box">
+          <h3>Watch: Climate Change Explained</h3>
+          <iframe width="560" height="315"
+            src="https://www.youtube.com/embed/9Yq2OPJR-a4?si=SKNx8qv23nv4-U0X"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen></iframe>
+          <p>placeholder text</p>
+        </div>
+      </div>
+
+      <!-- Column 3: Text Block -->
+      <div class="right-column">
+        <div class="text-box">
+          <h3>Nature-Based Solutions to Climate Change</h3>
+          <p>Nature-based solutions are increasingly being recognised as vital tools in the fight against climate change. These approaches involve protecting, restoring, and 
+            sustainably managing natural ecosystems to address environmental challenges while benefiting biodiversity and human well-being. In the context of climate change, 
+            nature-based solutions can reduce greenhouse gas emissions by sequestering carbon, mitigate the impact of extreme weather events, and build resilience in both urban 
+            and rural communities. 
+          <p>In Brisbane, initiatives such as urban tree planting, wetland restoration, and green roof development contribute to cooler city temperatures 
+            and improved air quality. Expanding green spaces helps counteract the urban heat island effect by providing shade, lowering ambient temperatures, and enhancing 
+            stormwater management. Restored wetlands and mangroves also act as natural buffers against sea-level rise and storm surges, particularly valuable for Brisbane’s 
+            vulnerable coastal zones.
+          </p> 
+          <p>Moreover, these solutions offer social and economic co-benefits. They can enhance mental health by increasing access to nature, 
+            create local jobs in land rehabilitation, and strengthen community involvement in sustainability efforts. As Brisbane continues to grow, integrating nature-based 
+            strategies into city planning will be essential for building a climate-resilient, liveable future.
+          </p>
+        </div>
+      </div>
+
     </section>
-  
 
-  <!--Footer seperated into two sections for styling and alignment to left and right corner of footer-->
-  <footer class="footer">
-    <div class="footer-left">
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-left">
         <a href="#">Contact</a>
         <a href="#">Careers</a>
         <a href="#">Sponsors</a>
         <a href="#">Privacy</a>
-    </div>
+      </div>
 
-    <div class="footer-right">
+      <div class="footer-right">
         <h3>Follow Us On:</h3>
         <a href="#">Facebook</a>
         <a href="#">Instagram</a>
         <a href="#">X</a>
-    </div>
+      </div>
     </footer>
+
+  </div>
 </body>
 </html>

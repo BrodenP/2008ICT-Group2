@@ -1,118 +1,267 @@
-    /*Sets Default Font For Webpage*/
-    body {
-    font-family: sans-serif;
-    }
-
-    /* Background colours for each section class just to see spacing */
-    .FAQ-box { background-color: #c1ffc1; padding: 1em; }
-    .current-pledges-box { background-color: #ffd3e3; padding: 1em; }
-    .footer { background-color: #d6d6d6; padding: 1em; }
-    .footer-left { background-color: #e8e8e8; padding: 1em; }
-    .footer-right { background-color: #cccccc; padding: 1em; }
-    .form-box { background-color: #ffe4b3; padding: 1em; }
-    .header { background-color: #add8e6; padding: 1em; }
-    .header-left { background-color: #b0e0e6; padding: 1em; }
-    .image-box { background-color: #f0e68c; padding: 1em; }
-    .image-text-box { background-color: #ffebcd; padding: 1em; }
-    .info-box { background-color: #e0ffff; padding: 1em; }
-    .landing-page { background-color: #e6ffe6; padding: 1em; }
-    .left-column { background-color: #e0f7fa; padding: 1em; }
-    .left-link-column { background-color: #dcedc8; padding: 1em; }
-    .logo { background-color: #fafad2; padding: 1em; }
-    .middle-column { background-color: #f5f5dc; padding: 1em; }
-    .nav { background-color: #f0f8ff; padding: 1em; }
-    .next-button { background-color: #ffe0b2; padding: 1em; }
-    .no-button { background-color: #f48fb1; padding: 1em; }
-    .pledge { background-color: #fddde6; padding: 1em; }
-    .pledge-form-box { background-color: #ffcccb; padding: 1em; }
-    .quiz-box { background-color: #b3e5fc; padding: 1em; }
-    .quiz-feedback { background-color: #d1c4e9; padding: 1em; }
-    .quiz-responses { background-color: #ffecb3; padding: 1em; }
-    .right-column { background-color: #d1f7c4; padding: 1em; }
-    .right-image-column { background-color: #fceabb; padding: 1em; }
-    .search-bar { background-color: #e6e6fa; padding: 1em; }
-    .sidebar-links { background-color: #f9fbe7; padding: 1em; }
-    .table-section { background-color: #f0fff0; padding: 1em; }
-    .text-box { background-color: #ffe4e1; padding: 1em; }
-    .video-box { background-color: #e0bbff; padding: 1em; }
-    .yes-button { background-color: #a5d6a7; padding: 1em; }
-
-    /* Flex layout for header, content columns, and footer */
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1em 2em;
-    }
-    
-    .header-left {
-        display: flex;
-        align-items: center;
-        gap: 1em;
-    }
-    
-    nav {
-        flex: 1;
-        display: flex;
-        justify-content: center;
-        gap: 1.5em;
-    }
-    
-    /* Horizontal layout homepage */
-    .landing-main-content {
-        display: flex;
-        gap: 1em;
-    }
-
-    /* Horizontal layout for columns within content body - Eg will space left-column, and right-column horizontally if within class "content" */
-    .content {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1em;
-    }
-    
-    /* Vertical stacking inside sidebar */
-    .left-link-column {
-        display: flex;
-        flex-direction: column;
-        gap: 1em;
-    }
-
-    /* Column layout: left, middle, and right columns stack child elements vertically */
-    .left-column,
-    .middle-column,
-    .right-column {
-        flex: 1;
-        min-width: 250px;
-        display: flex;
-        flex-direction: column;
-        gap: 1em;
-    }
-    
-    /* Footer layout: horizontal split between left and right */
-    footer {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 2em;
-        flex-wrap: wrap;
-    }
-    
-    .footer-left,
-    .footer-right {
-        display: flex;
-        align-items: center;
-        gap: 1em;
-    }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
   
-  /* Stastics section on the right side of home page */
-  .home-right-stat{
+  html, body {
+    height: 100%;
+  }
+  
+  body {
+    font-family: sans-serif;
+    background-color: #FFFFFF;
+    color: #333333;
+  }
+  
+  .page-container {
     display: flex;
-    justify-content: space-around;
-    margin: 38px;
-
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+  }
+  
+  .header {
+    background-color: #0767B1;
+    color: #FFFFFF;
+    padding: 0;
+    font-weight: bold;
+  }
+  
+  .header-left {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    background-color: #0767B1;
+    padding: 1em;
+  }
+  
+  .nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+    background-color: #0767B1;
+    padding: 1em;
+    color: #FFFFFF;
+  }
+  
+  .search-bar {
+    background-color: #0767B1;
+    color: #FFFFFF;
+    border: none;
+    padding: 0.5em 1em;
+  }
+  
+  .search-bar input {
+    background-color: #FFFFFF;
+    color: #333;
+    border: none;
+    padding: 0.5em;
+    border-radius: 4px;
+  }
+  
+  .logo {
+    background-color: #FFFFFF;
+    padding: 1em;
+  }
+  
+  /* Hero Section with Overlay Table */
+  .content-main {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .hero-image {
+    width: 100%;
+    height: 619px;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .overlay-table {
+    position: absolute;
+    bottom: 1em;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffffff;
+    padding: 1.5em 2em;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+    width: 80%;
+    text-align: center;
+    z-index: 10;
+  }
+  
+  .overlay-table table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 2em 1em;
+  }
+  
+  .overlay-table th,
+  .overlay-table td {
+    padding: 1em;
+  }
+  
+  /* General content layout for other pages */
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    padding: 2em;
+    background-color: #F8FFF8;
+    box-sizing: border-box;
+    flex: 1;
+  }
+  
+  .left-column,
+  .middle-column,
+  .right-column {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
   }
 
-  .statistics-box-live{
-    margin: auto
+  .video-box iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    border: none;
+    border-radius: 8px;
   }
+
+  /* Shared content blocks */
+  .image-text-box,
+  .video-box,
+  .text-box,
+  .info-box,
+  .quiz-box,
+  .quiz-responses,
+  .image-box,
+  .FAQ-box,
+  .pledge-form-box,
+  .current-pledges-box,
+  .form-box {
+    background-color: #EAF5F2;
+    padding: 1.5em;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    height: 100%;
+  }
+
+  .image-text-box {
+    display: block;
+    overflow: hidden; /* Helps contain floated content */
+  }
+
+  .float-image {
+    float: right;
+    max-width: 45%;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    border-radius: 8px;
+  }
+
+  .float-left-image {
+    float: left;
+    max-width: 45%;
+    margin: 0 1em 1em 0;
+    border-radius: 8px;
+  }
+
+  .image-text-box::after,
+  .text-box::after,
+  .info-box::after,
+  .video-box::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.image-text-box p + p {
+  margin-top: 1em;
+}
+
+  /* Buttons */
+  .next-button,
+  .yes-button {
+    background-color: #D6D583;
+    color: #333333;
+    padding: 1em;
+  }
+  
+  .no-button {
+    background-color: #FFDE59;
+    color: #333333;
+    padding: 1em;
+  }
+  
+  .quiz-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    background-color: #F8FFF8;
+    box-sizing: border-box;
+    max-width: 450px;
+    align-self: flex-start; /* 👈 Also prevents it from matching taller neighbours */
+  }
+
+  .quiz-box {
+    width: 100%;
+    max-width: 400px;
+    background-color: #EAF5F2;
+    padding: 1.5em;
+    border-radius: 12px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  
+
+  .pledge-form-box,
+  .pledge {
+    background-color: #F3FDF7;
+    padding: 1em;
+  }
+  
+  /* Footer */
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+    flex-wrap: wrap;
+    background-color: #0767B1;
+    color: #FFFFFF;
+  }
+  
+  .footer-left,
+  .footer-right {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    background-color: #0767B1;
+    padding: 1em;
+    font-weight: bold;
+  }
+  
+
+  
+  

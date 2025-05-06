@@ -2,117 +2,72 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <!--Affects text shown in browser tab-->
   <title>Climate Change Brisbane</title>
-  <!--Assign Stylesheet-->
   <link rel="stylesheet" href="styles.css">
 </head>
 
-<!--Proposed Changes / Change Log
-    -Moved search bar to header section to improve flow of webpage
-
-
-
--->
 <body>
-    <!--Header-->
+  <div class="page-container">
+
+    <!-- Header -->
     <header class="header">
-      <!-- Left: Logo and Site Name -->
       <div class="header-left">
-        <img src="logo.png" alt="Logo" class="logo">
+        <img src="logo.png" alt="Logo" class="logo" width="150" height="150">
         <h1>Climate Change Brisbane</h1>
       </div>
-      
-        <!-- Center: Main Nav links -->
-        <nav class="nav">
-          <a href="index.html">Home</a>
-          <a href="content_page1.html">Climate Change Overview</a>
-          <a href="content_page2.html">Local Impacts</a>
-          <a href="content_page3.html">Actions & Solutions</a>
-          <a href="content_page4.html">Get Involved</a>
-          <a href="content_page5.html">News & Updates</a>
-        </nav>
-      
-        <!-- Right: Search Bar -->
-        <div class="search-bar">
-          <input type="text" placeholder="Search..." disabled>
-          <button disabled>🔍</button>
-        </div>
+
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="content_page1.html">Climate Change Overview</a>
+        <a href="content_page2.html">Local Impacts</a>
+        <a href="content_page3.html">Actions & Solutions</a>
+        <a href="content_page4.html">Your Impact</a>
+        <a href="content_page5.html">Get Involved</a>
+      </nav>
+
+      <div class="search-bar">
+        <input type="text" placeholder="Search..." disabled>
+        <button disabled>🔍</button>
+      </div>
     </header>
 
-
-    <!--Landing page side links and homepage image-->
-    <section class="landing-page">
-        <!--sidebar-links class for future flexbox container-->
-        <div class="landing-main-content">
-            <div class="sidebar-links">
-                <!--More Links for navigating website-->
-                <div class="left-link-column">
-                    <a href="#">Sidebar Link 1</a>
-                    <a href="#">Sidebar Link 2</a>
-                    <a href="#">Sidebar Link 3</a>
-                </div>
-            </div>
-            <!--Place for Main Page Climate Change Image-->
-            <div class="right-image-column">
-                <img src="large-image.jpg" alt="landing page image">
-            </div>
-        </div>
-        <!-- Climate change stats table under extra links and landing page image columns -->
-        <div class="table-section">
-            <table>
-            <tr>
-                <th>statistic 1</th>
-                <th>statistic 2</th>
-                <th>statistic 3</th>
-            </tr>
-            <tr>
-                <td>Text 1</td>
-                <td>Text 2</td>
-                <td>Text 3</td>
-            </tr>
-            </table>
-        </div>
-    </section>
-
-    <!-- Statistics section on the home page -->
-
-    <div class="home-right-stat">
-        <div class="stat-sec">
-          <h4>Global Temperature</h4>
-          <p>xxx</p>
-        </div>
-        <div class="stat-sec">
-          <h4>Sea Level</h4>
-          <p>xxx</p>
-        </div>
-        <div class="stat-sec">
-          <h4>Carbon Dioxide</h4>
-          <p>xxx</p>
-        </div>
+    <!-- Main Content Section -->
+    <section class="content-main">
+      <!-- Full-width Coast Image -->
+      <img src="coast.jpg" alt="Landing page image" class="hero-image">
+      <div class="overlay-table">
+        <table>
+          <tr>
+            <th>Rising Temperatures</th>
+            <th>Extreme Heat Days</th>
+            <th>Sea Level Rise</th>
+          </tr>
+          <tr>
+            <td>+1.5°C in QLD since 1910</td>
+            <td>2× more days >35°C</td>
+            <td>+20 cm since 1880</td>
+          </tr>
+        </table>
       </div>
     </section>
 
-    <div class="statistics-box-live">
-      </div>
-    </div>
-  </section>
-
-    <!--Footer seperated into two sections for styling and alignment to left and right corner of footer-->
+    <!-- Footer -->
     <footer class="footer">
-    <div class="footer-left">
+      <div class="footer-left">
         <a href="#">Contact</a>
         <a href="#">Careers</a>
         <a href="#">Sponsors</a>
         <a href="#">Privacy</a>
-    </div>
+      </div>
 
-    <div class="footer-right">
+      <div class="footer-right">
         <h3>Follow Us On:</h3>
         <a href="#">Facebook</a>
         <a href="#">Instagram</a>
         <a href="#">X</a>
-    </div>
+      </div>
     </footer>
+
+  </div>
 </body>
 </html>
