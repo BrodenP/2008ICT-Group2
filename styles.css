@@ -184,6 +184,10 @@
     height: 100%;
   }
 
+  .info-box summary {
+    font-weight: bold;
+  }
+
   .image-text-box {
     display: block;
     overflow: hidden; /* Helps contain floated content */
@@ -364,21 +368,27 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 18px;
   }
   .slide.one {
     background: rgb(182, 19, 109);
+    border-radius: 18px;
   }
   .slide.two {
     background: rgb(255, 64, 64);
+    border-radius: 18px;
   }
   .slide.three {
     background: rgb(11, 173, 188);
+    border-radius: 18px;
   }
   .slide.four {
     background: rgb(11, 188, 14);
+    border-radius: 18px;
   }
   .slide.five {
     background: rgb(173, 11, 188);
+    border-radius: 18px;
   }
   @keyframes sliding {
     0% {
