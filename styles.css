@@ -69,10 +69,6 @@
   .nav a:hover {
     text-decoration: underline;
   }
-
-  .nav a.active {
-    text-decoration: underline;
-  }
   
   .search-bar {
     background-color: #0767B1;
@@ -227,14 +223,25 @@
     background-color: #D6D583;
     color: #333333;
     padding: 1em;
+    transition: all 0.5s ease;
+  }
+
+  .yes-button:hover{
+    transform: scale(120%);
+
   }
   
   .no-button {
     background-color: #FFDE59;
     color: #333333;
     padding: 1em;
+    transition: all 0.5s ease;
   }
-  
+
+  .no-button:hover{
+    transform: scale(120%);
+  }
+
   .quiz-column {
     flex: 1;
     display: flex;
