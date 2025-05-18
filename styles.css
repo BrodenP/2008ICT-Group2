@@ -430,4 +430,13 @@
       transform: translateX(-400%);
     }
   }
+
+.FAQ-box ul li {
+  margin-bottom: 1em;  /* Space between each Q&A */
+}
+
+.FAQ-box ul li p {
+  line-height: 1.5;    /* Better paragraph readability inside Q&A answers */
+}
+
   
