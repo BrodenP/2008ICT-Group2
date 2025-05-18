@@ -439,4 +439,9 @@
   line-height: 1.2;    /* Better paragraph readability inside Q&A answers */
 }
 
+.image-text-box h3 {
+  margin-bottom: 0.75em;
+}
+
+
   
