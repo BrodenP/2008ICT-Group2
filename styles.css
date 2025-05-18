@@ -448,4 +448,45 @@ p {
 }
 
 
+
+@media (max-width: 768px) {     /* Layout for mobile phones and smaller screen - 768px is the most common breakpoint in web design */
+
+  .content {
+    flex-direction: column;     /* Stack all content columns vertically instead of side by side. */
+  }
+
+  .left-column,
+  .middle-column,
+  .right-column {
+    flex: 1 1 100%;
+    padding: 1em 0;      /* Make each column take up full width and reduce side padding */
+  }
+
+  .float-image,
+  .float-left-image {
+    float: none;
+    display: block;
+    margin: 1em auto;
+    max-width: 100%;    /* Removes float on images and centres them with full width */
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;            /* Navigation bar links vertically */
+  }
+
+ 
+  h1 {
+    font-size: 1.5em;
+    text-align: center;         /* Resize and centres the main heading for smaller screens */
+  }
+
+  .search-bar {
+    justify-content: center;
+    margin-top: 1em;        /* Centres the search bar and adds a spacing above it */
+  }
+}
+
+
   
