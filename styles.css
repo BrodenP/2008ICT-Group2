@@ -255,7 +255,7 @@
     background-color: #F8FFF8;
     box-sizing: border-box;
     max-width: 450px;
-    align-self: flex-start; /* 👈 Also prevents it from matching taller neighbours */
+    align-self: flex-start;
   }
 
   .quiz-box {
